@@ -16,7 +16,7 @@ Verify the status:
 ```
 sudo systemctl status mosquitto.service
 ```
-![](https://github.com/MrFMach/Mosquitto-Broker-RaspberryPi/blob/main/media/status.png)
+![](https://github.com/MrFMach/Mosquitto-Broker-RaspberryPi/blob/main/status.png)
 
 You will see "active running".
 
@@ -47,7 +47,7 @@ allow_anonymous false
 listener 1883
 ```
 
-![](https://github.com/MrFMach/Mosquitto-Broker-RaspberryPi/blob/main/media/config.png)
+![](https://github.com/MrFMach/Mosquitto-Broker-RaspberryPi/blob/main/config.png)
 
 This will allow only devices with a name and password to access port 1883.
 Type Ctrl+X to exit and S to save.
@@ -80,7 +80,7 @@ mosquitto_pub -d -u username -P password -t topic/test -m "Hello, Mosquitto!"
 ```
 This terminal will publish the message in the configured topic.
 
-![](https://github.com/MrFMach/Mosquitto-Broker-RaspberryPi/blob/main/media/pubsub.png)
+![](https://github.com/MrFMach/Mosquitto-Broker-RaspberryPi/blob/main/pubsub.png)
 
 If you got here, the broker is working correctly!!!
 
